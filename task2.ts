@@ -26,6 +26,7 @@ deleteTask(task: string): number;
 class taskClass implements tasks {
     tasksArray = ["First String"];
 
+    //All of the functions specified in the interface must be used by classes that implement them.
     addTask(task: string): number {
         let x = this.tasksArray.push(task); //push = add, basically.
         console.log("[String inserted into tasks array]");
