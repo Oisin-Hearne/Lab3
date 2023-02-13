@@ -17,7 +17,7 @@ function addTask(task: string): number {
 // (c) Create a listAllTasks function:
 //      It iterates over all the tasks in the array.
 //      It prints each array item to the console.
-function listAllTasks() {
+function listAllTasks(): void {
     for(let num = 0; num < tasks.length; num++) {
         console.log("Item "+num+": "+tasks[num]);
     }
@@ -31,7 +31,7 @@ function listAllTasks() {
 //      Return the number of elements in the array.
 function deleteTask(task: string): number {
     let index: number = tasks.indexOf(task);
-    if(index > 0)
+    if(index >= 0)
     {
         tasks.splice(index, 1);
         console.log("[String removed from tasks array]");
